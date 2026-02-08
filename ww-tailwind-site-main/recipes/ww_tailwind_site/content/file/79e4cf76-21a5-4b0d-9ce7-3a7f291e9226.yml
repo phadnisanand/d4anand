@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 79e4cf76-21a5-4b0d-9ce7-3a7f291e9226
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: PXL_20240609_045220918.jpg
+  uri:
+    -
+      value: 'public://2026-01/PXL_20240609_045220918.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 437529
+  status:
+    -
+      value: true

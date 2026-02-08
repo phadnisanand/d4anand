@@ -1,0 +1,95 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 9c358638-bd08-4847-8524-295334feabcd
+  default_langcode: en
+  depends:
+    79e4cf76-21a5-4b0d-9ce7-3a7f291e9226: file
+    125df922-42be-40ca-84af-24166456522d: media
+    fac4bfd8-9b60-4c94-8958-dcf4dc64cec0: file
+    d8c1fdb0-c4aa-4f4e-8b34-217a2e97ff67: media
+    b88c76f6-d04b-4e42-8df0-a2e2562a8daf: file
+    b69658fd-d304-4de4-8eac-d11de70465a5: media
+    addeedf5-bbef-4361-892c-53db62882186: file
+    5be8c854-2741-4d35-b78b-935185cf9c6c: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: Homepage
+  components:
+    -
+      uuid: da579677-bd83-487c-95b2-74e1e4c2037d
+      component_id: sdc.webwash_tailwind.hero_image
+      inputs:
+        link_label: 'Watch NOW!'
+        heading_text: 'Latest Drupal Videos'
+        subtitle: 'Watch the latest live streams'
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 125df922-42be-40ca-84af-24166456522d
+            target_type: media
+        link_url: 'https://www.webwash.net'
+    -
+      uuid: 94c40cd6-5a12-4780-97f8-a0e7f341f566
+      component_id: sdc.webwash_tailwind.section_grid
+      inputs:
+        highlight: true
+        title: 'Latest articles'
+    -
+      parent_uuid: 94c40cd6-5a12-4780-97f8-a0e7f341f566
+      slot: grid
+      uuid: 41a5762f-7b6f-49ee-9351-83bada8349d0
+      component_id: sdc.webwash_tailwind.card
+      inputs:
+        title: 'Indexing PDF Docs using Search API and Solr in Drupal'
+        link_label: 'Read now!'
+        link_url: 'https://www.webwash.net/indexing-pdf-docs-search-api-and-solr-in-drupal/'
+        summary: 'Indexing document content in Drupal enables users to search within PDF and Word files, making document libraries more accessible and discoverable.'
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: d8c1fdb0-c4aa-4f4e-8b34-217a2e97ff67
+            target_type: media
+    -
+      parent_uuid: 94c40cd6-5a12-4780-97f8-a0e7f341f566
+      slot: grid
+      uuid: 7b44ae64-2a8e-4140-8490-e3d04310e06d
+      component_id: sdc.webwash_tailwind.card
+      inputs:
+        title: 'How to Create Tables in Drupal CMS'
+        summary: 'The video above explores methods for creating and managing tables in Drupal. '
+        link_url: 'https://www.webwash.net/how-to-create-tables-in-drupal-cms/'
+        link_label: 'Read now!'
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: b69658fd-d304-4de4-8eac-d11de70465a5
+            target_type: media
+    -
+      parent_uuid: 94c40cd6-5a12-4780-97f8-a0e7f341f566
+      slot: grid
+      uuid: 2383268a-b50a-47d7-9085-a8fa57f1176b
+      component_id: sdc.webwash_tailwind.card
+      inputs:
+        title: 'Getting Started with Search API in Drupal'
+        summary: 'Implementing powerful search functionality in Drupal requires more than the default search module.'
+        link_url: 'https://www.webwash.net/getting-started-with-search-api-in-drupal/'
+        link_label: 'Read now!'
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 5be8c854-2741-4d35-b78b-935185cf9c6c
+            target_type: media
+  path:
+    -
+      alias: /homepage
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true

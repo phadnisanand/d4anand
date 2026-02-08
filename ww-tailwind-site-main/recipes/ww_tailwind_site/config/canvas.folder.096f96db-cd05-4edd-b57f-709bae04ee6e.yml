@@ -1,0 +1,14 @@
+uuid: 096f96db-cd05-4edd-b57f-709bae04ee6e
+langcode: en
+status: true
+dependencies: {  }
+name: Other
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.olivero.teaser
+  - sdc.webwash_tailwind.card
+  - sdc.webwash_tailwind.heading
+  - sdc.webwash_tailwind.hero_image
+  - sdc.webwash_tailwind.section_grid
+  - sdc.webwash_tailwind.text

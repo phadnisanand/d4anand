@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - webwash_tailwind
+id: webwash_tailwind_aboutus
+theme: webwash_tailwind
+region: footer
+weight: -4
+provider: null
+plugin: 'block_content:37706f91-a5ff-42ce-966d-2ea966bf9297'
+settings:
+  id: 'block_content:37706f91-a5ff-42ce-966d-2ea966bf9297'
+  label: 'About Us'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

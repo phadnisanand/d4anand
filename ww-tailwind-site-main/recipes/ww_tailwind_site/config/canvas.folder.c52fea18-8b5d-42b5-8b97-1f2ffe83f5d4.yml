@@ -1,0 +1,11 @@
+uuid: c52fea18-8b5d-42b5-8b97-1f2ffe83f5d4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Content block'
+configEntityTypeId: component
+weight: 0
+items:
+  - block.block_content.37706f91-a5ff-42ce-966d-2ea966bf9297
+  - block.block_content.39bafa47-a29f-455b-b2a1-ebb7311b56dd
+  - block.block_content.7525d2c6-9b60-434e-a0a8-d50196288f4e

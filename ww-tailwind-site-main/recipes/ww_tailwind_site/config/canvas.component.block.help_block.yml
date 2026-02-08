@@ -1,0 +1,30 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+label: Help
+id: block.help_block
+source: block
+source_local_id: help_block
+provider: help
+active_version: f0baefd21cddb437
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: help_block
+        label: Help
+        label_display: '0'
+        provider: help
+    fallback_metadata:
+      slot_definitions: null
+  620979b5a309a407:
+    settings:
+      default_settings:
+        id: help_block
+        label: Help
+        label_display: '0'
+        provider: help
+    fallback_metadata:
+      slot_definitions: null

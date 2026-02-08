@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fac4bfd8-9b60-4c94-8958-dcf4dc64cec0
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: AS-318-d-solr-docs-thumbnail.jpg
+  uri:
+    -
+      value: 'public://2026-01/AS-318-d-solr-docs-thumbnail.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 315810
+  status:
+    -
+      value: true

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - webwash_tailwind
+id: webwash_tailwind_quicklinks
+theme: webwash_tailwind
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:39bafa47-a29f-455b-b2a1-ebb7311b56dd'
+settings:
+  id: 'block_content:39bafa47-a29f-455b-b2a1-ebb7311b56dd'
+  label: 'Quick links'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

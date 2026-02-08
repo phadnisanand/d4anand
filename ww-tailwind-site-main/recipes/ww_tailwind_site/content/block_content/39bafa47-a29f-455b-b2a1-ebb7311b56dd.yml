@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 39bafa47-a29f-455b-b2a1-ebb7311b56dd
+  bundle: basic
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Quick links'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: '<ul><li><a href="#">Our Services</a></li><li><a href="#">Get Started</a></li></ul>'
+      format: basic_html
+      summary: ''

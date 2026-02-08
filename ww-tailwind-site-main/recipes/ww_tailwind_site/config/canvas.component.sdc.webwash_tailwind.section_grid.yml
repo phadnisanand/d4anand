@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - webwash_tailwind
+label: 'Section grid'
+id: sdc.webwash_tailwind.section_grid
+source: sdc
+source_local_id: 'webwash_tailwind:section_grid'
+provider: webwash_tailwind
+active_version: 9a234df951d92846
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        highlight:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+        columns:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: 33-33-33
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        grid:
+          title: Grid

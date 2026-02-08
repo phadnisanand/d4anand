@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: addeedf5-bbef-4361-892c-53db62882186
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: AS-316-d-search-api-thumbnail.jpg
+  uri:
+    -
+      value: 'public://2026-01/AS-316-d-search-api-thumbnail.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 435923
+  status:
+    -
+      value: true

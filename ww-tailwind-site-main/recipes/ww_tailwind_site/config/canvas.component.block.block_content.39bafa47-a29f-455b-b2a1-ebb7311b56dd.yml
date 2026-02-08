@@ -1,0 +1,32 @@
+langcode: en
+status: false
+dependencies: {  }
+label: 'Quick links'
+id: block.block_content.39bafa47-a29f-455b-b2a1-ebb7311b56dd
+source: block
+source_local_id: 'block_content:39bafa47-a29f-455b-b2a1-ebb7311b56dd'
+provider: block_content
+active_version: 1a7ab73f673ffdba
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:39bafa47-a29f-455b-b2a1-ebb7311b56dd'
+        label: 'Quick links'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+  1038d630b9cc08eb:
+    settings:
+      default_settings:
+        id: 'block_content:39bafa47-a29f-455b-b2a1-ebb7311b56dd'
+        label: 'Quick links'
+        label_display: '0'
+        provider: block_content
+        status: true
+        info: ''
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b88c76f6-d04b-4e42-8df0-a2e2562a8daf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: AS-299-d-create-tables-thumbnail.jpg
+  uri:
+    -
+      value: 'public://2026-01/AS-299-d-create-tables-thumbnail.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 138809
+  status:
+    -
+      value: true

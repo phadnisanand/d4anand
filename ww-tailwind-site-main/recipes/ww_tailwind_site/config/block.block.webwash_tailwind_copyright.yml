@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - webwash_tailwind
+id: webwash_tailwind_copyright
+theme: webwash_tailwind
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:7525d2c6-9b60-434e-a0a8-d50196288f4e'
+settings:
+  id: 'block_content:7525d2c6-9b60-434e-a0a8-d50196288f4e'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,12 @@
+uuid: e9d671e5-8f93-4c47-895c-3778d386db85
+langcode: en
+status: true
+dependencies: {  }
+name: Block
+configEntityTypeId: component
+weight: 0
+items:
+  - block.block_content.37706f91-a5ff-42ce-966d-2ea966bf9297
+  - block.block_content.39bafa47-a29f-455b-b2a1-ebb7311b56dd
+  - block.block_content.7525d2c6-9b60-434e-a0a8-d50196288f4e
+  - block.dashboard_optional

@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b69658fd-d304-4de4-8eac-d11de70465a5
+  bundle: image
+  default_langcode: en
+  depends:
+    b88c76f6-d04b-4e42-8df0-a2e2562a8daf: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: AS-299-d-create-tables-thumbnail.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: Create
+      title: ''
+      width: 1920
+      height: 1080
+      entity: b88c76f6-d04b-4e42-8df0-a2e2562a8daf

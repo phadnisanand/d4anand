@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 125df922-42be-40ca-84af-24166456522d
+  bundle: image
+  default_langcode: en
+  depends:
+    79e4cf76-21a5-4b0d-9ce7-3a7f291e9226: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: PXL_20240609_045220918.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: plane
+      title: ''
+      width: 1512
+      height: 851
+      entity: 79e4cf76-21a5-4b0d-9ce7-3a7f291e9226

@@ -1,0 +1,26 @@
+name: Test Site Installation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Setup DDEV
+        uses: ddev/github-action-setup-ddev@v1.12.1
+
+      - name: Install Composer dependencies
+        run: ddev composer install
+
+      - name: Install site with recipe
+        run: ddev drush site:install --yes ../recipes/ww_tailwind_site
+
+      - name: Test homepage contains expected content
+        run: |
+          curl --silent https://ww-tailwind-site.ddev.site | grep -q "Latest Drupal Videos"
+          curl --silent https://ww-tailwind-site.ddev.site | grep -q "How to Create Tables in Drupal CMS"

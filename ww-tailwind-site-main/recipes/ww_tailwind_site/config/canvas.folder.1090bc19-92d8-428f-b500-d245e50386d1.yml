@@ -1,0 +1,9 @@
+uuid: 1090bc19-92d8-428f-b500-d245e50386d1
+langcode: en
+status: true
+dependencies: {  }
+name: Block
+configEntityTypeId: component
+weight: 0
+items:
+  - block.dashboard_optional

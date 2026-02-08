@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5be8c854-2741-4d35-b78b-935185cf9c6c
+  bundle: image
+  default_langcode: en
+  depends:
+    addeedf5-bbef-4361-892c-53db62882186: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: AS-316-d-search-api-thumbnail.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Search API'
+      title: ''
+      width: 1920
+      height: 1080
+      entity: addeedf5-bbef-4361-892c-53db62882186

@@ -1,0 +1,32 @@
+langcode: en
+status: false
+dependencies: {  }
+label: Copyright
+id: block.block_content.7525d2c6-9b60-434e-a0a8-d50196288f4e
+source: block
+source_local_id: 'block_content:7525d2c6-9b60-434e-a0a8-d50196288f4e'
+provider: block_content
+active_version: de55906e083d95be
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:7525d2c6-9b60-434e-a0a8-d50196288f4e'
+        label: Copyright
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+  703e176ce73b9262:
+    settings:
+      default_settings:
+        id: 'block_content:7525d2c6-9b60-434e-a0a8-d50196288f4e'
+        label: Copyright
+        label_display: '0'
+        provider: block_content
+        status: true
+        info: ''
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
