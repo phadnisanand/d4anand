@@ -1,0 +1,23 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+props:
+  type: object
+  required:
+    - slides
+  properties:
+    slides:
+      type: array
+      title: Slides
+      description: Carousel slides
+      items:
+        type: object
+        required:
+          - image
+          - alt
+        properties:
+          image:
+            type: string
+            title: Image URL
+          alt:
+            type: string
+            title: Alt text

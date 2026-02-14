@@ -1,0 +1,31 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/component.schema.json
+
+name: Accordion
+description: Tailwind-based accordion component
+status: stable
+group: Content
+
+props:
+  type: object
+  required:
+    - items
+  properties:
+    items:
+      type: array
+      title: Accordion items
+      items:
+        type: object
+        required:
+          - title
+          - content
+        properties:
+          title:
+            type: string
+            title: Title
+          content:
+            type: string
+            title: Content
+    open_first:
+      type: boolean
+      title: Open first item
+      default: false

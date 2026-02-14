@@ -58,10 +58,97 @@
   {{ page.help }}
 
   <main role="main">
+
+
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
-      {{ page.content }}
+	  <div class="p-6 bg-base-200 text-base-content">
+	  DaisyUI fixed 🎉
+	</div>
+
+
+{{ include('@drupal_tailwind_theme/components/carousel/carousel.twig', {
+  slides: [
+    {
+      image: 'https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp',
+      alt: 'Slide 1'
+    },
+    {
+      image: 'https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp',
+      alt: 'Slide 2'
+    },
+    {
+      image: 'https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp',
+      alt: 'Slide 3'
+    },
+    {
+      image: 'https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp',
+      alt: 'Slide 4'
+    }
+  ]
+}) }}
+
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">https://daisyui.com/components/card/
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+	{{ include('@drupal_tailwind_theme/components/card-bottom-image/card-bottom-image.twig', {
+	  title: 'Card Title',
+	  description: 'A card component has a figure, a body part, and inside body there are title and actions parts',
+	  image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+	  image_alt: 'Drupal card image',
+	  link: '/blog/drupal-sdc'
+	}) }}
+	{{ include('@drupal_tailwind_theme/components/card-bottom-image/card-bottom-image.twig', {
+	  title: 'Card Title',
+	  description: 'A card component has a figure, a body part, and inside body there are title and actions parts',
+	  image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+	  image_alt: 'Drupal card image',
+	  link: '/blog/drupal-sdc'
+	}) }}
+	{{ include('@drupal_tailwind_theme/components/card-bottom-image/card-bottom-image.twig', {
+	  title: 'Card Title',
+	  description: 'A card component has a figure, a body part, and inside body there are title and actions parts',
+	  image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+	  image_alt: 'Drupal card image',
+	  link: '/blog/drupal-sdc'
+	}) }}
+	</div>
+</div>
+
+
+	<div class="space-y-3">
+	  {{ include('@drupal_tailwind_theme/components/accordion/accordion.twig', {
+		title: 'FAQ 1',
+		content: 'Answer from Drupal field.'
+	  }) }}
+	</div>
+	
+	
+	<div class="max-w-2xl mx-auto space-y-2">
+
+	  <div class="collapse collapse-arrow bg-base-200">
+		<input type="radio" name="faq-accordion" checked />
+		<div class="collapse-title font-medium">
+		  Accordion Item 1
+		</div>
+		<div class="collapse-content">
+		  <p>Only one accordion can be open at a time.</p>
+		</div>
+	  </div>
+
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="faq-accordion" />
+    <div class="collapse-title font-medium">
+      Accordion Item 2
+    </div>
+    <div class="collapse-content">
+      <p>DaisyUI uses pure CSS + Tailwind utilities.</p>
+    </div>
+  </div>
+
+</div>
+
+
     </div>{# /.layout-content #}
 
     {% if page.sidebar_first %}

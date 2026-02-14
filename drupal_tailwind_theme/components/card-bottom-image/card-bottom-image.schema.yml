@@ -1,0 +1,23 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+props:
+  type: object
+  required:
+    - title
+    - image
+  properties:
+    title:
+      type: string
+      title: Card title
+    description:
+      type: string
+      title: Card description
+    image:
+      type: string
+      title: Image URL
+    image_alt:
+      type: string
+      title: Image alt text
+    link:
+      type: string
+      title: Card link
