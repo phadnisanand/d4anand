@@ -1,0 +1,40 @@
+https://project.pages.drupalcode.org/ui_patterns/
+https://www.drupal.org/project/ui_patterns
+https://www.youtube.com/watch?v=RZkNhS09e10&t=1557s
+https://www.drupal.org/project/sdc_display
+https://daisyui.com/components/card/
+
+
+Theme-
+https://www.hsksoftwareservices.in/blog/integrating-tailwind-css-drupal-beginners-guide
+https://medium.com/@serhii.shevchyk/how-to-set-up-a-custom-drupal-11-theme-with-tailwindcss-4-1-8337e51c4df1
+https://mglaman.dev/blog/migrating-tailwindcss-iteratively-your-drupal-theme
+https://metadesignsolutions.com/drupal-10-theming-with-tailwind-css-a-modern-frontend-guide/
+https://www.specbee.com/blogs/create-custom-design-systems-with-tailwind-css-and-implementing-in-drupal
+https://www.grapestechsolutions.com/blog/custom-drupal-theme-development/
+https://www.webwash.net/tailwind-css-theme-setup-for-drupal-canvas/
+
+Drupal custom theme create-
+php core/scripts/drupal generate-theme drupal_tailwind_theme
+npx tailwindcss init -p 
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss --input src\index.css  --output dist\index.css
+
+https://www.drupal.org/project/tailwindcss_utility
+https://www.drupal.org/project/tailwindcss
+
+https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components/creating-a-single-directory-component
+https://drupalize.me/tutorial/create-your-first-drupal-single-directory-component-sdc
+https://www.qed42.com/insights/single-directory-components-in-drupal-10
+https://drupalize.me/tutorial/anatomy-drupal-single-directory-component-sdc
+https://www.drush.org/12.x/generators/single-directory-component/
+https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components/modules-and-tools-that-extend-single-directory-components
+drush generate sdc accordion 
+https://drupal.harvardsites.harvard.edu/accordion
+
+vendor/bin/drush generate sdc \
+  --destination="C:/xampp/htdocs/www/drupal11/web/themes/custom/d11theme/components"
+https://medium.com/@askibinski/drupal-10-single-directory-components-storybook-23d9ec59ecae
+
+npx tailwindcss  -c ./tailwind.config.js -i ./src/index.css -o ./dist/index.css
+

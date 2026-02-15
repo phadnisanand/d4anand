@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+
+{% set slides = [] %}
+
+{% for row in rows %}
+
+{% set media = row.content['#row']._entity.field_image.entity ?? null %}
+
+{% if media %}
+  {% set image = media.field_media_image[0] ?? null %}
+  {% if image %}
+	{% set slides = slides|merge([{
+    image: file_url(image.entity.uri.value),
+    alt: row.content['#row']._entity.field_image.alt,
+  }]) %}
+  {% endif %}
+{% endif %}
+  
+{% endfor %}
+
+{{ include('@drupal_tailwind_theme/components/carousel/carousel.twig', {
+  slides: slides
+}) }}
