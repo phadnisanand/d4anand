@@ -1,0 +1,15 @@
+name: Daisy Carousel Item
+status: stable
+slots:
+  image:
+    title: Slide image
+  caption:
+    title: Slide caption
+props:
+  type: object
+  properties:
+    contentid:
+      type: integer
+      title: Slide ID
+      description: Numeric ID used for carousel navigation
+      example: 1

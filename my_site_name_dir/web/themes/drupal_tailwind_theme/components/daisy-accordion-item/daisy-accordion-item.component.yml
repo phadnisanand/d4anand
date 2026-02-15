@@ -1,0 +1,7 @@
+name: Daisy Accordion Item
+status: stable
+slots:
+  title:
+    title: Accordion title
+  content:
+    title: Accordion content

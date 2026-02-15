@@ -1,0 +1,6 @@
+name: Daisy Carousel
+status: stable
+slots:
+  items:
+    title: Carousel items
+    description: Carousel slides rendered from Views rows
