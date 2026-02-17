@@ -1,0 +1,10 @@
+{
+  "name": "my/my_custom_recipe",
+  "description": "Custom recipe for SEO features",
+  "type": "drupal-recipe",
+  "require": {
+    "drupal/pathauto": "^1.11",
+    "drupal/metatag": "^2.0",
+	"drupal/default_content": "^2.0@beta"
+  }
+}

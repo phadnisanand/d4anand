@@ -1,0 +1,14 @@
+name: 'My Custom SEO Recipe'
+description: 'Installs Pathauto and Metatag, sets default configs.'
+type: 'Custom'
+
+# Install modules via composer (already added in composer.json)
+install:
+  - pathauto
+  - metatag
+  - default_content
+# Import configuration from /config folder
+config:
+  import:
+    pathauto:
+      - pathauto.pattern.basic_page_pattern
