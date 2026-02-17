@@ -1,0 +1,26 @@
+
+1) In root composer.json file
+
+  "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+	   	{
+		  "type": "path",
+		  "url": "recipes/my_custom_recipe"
+		}
+    ],
+	
+2. install composer
+composer require my/my_custom_recipe:dev-main
+
+3. Apply recipe
+vendor/bin/drush recipe ../recipes/my_custom_recipe
+
+4. default content export-
+vendor/bin/drush   default-content-export  node 1
+https://www.drush.org/13.x/commands/content_export/
+https://www.drupal.org/project/default_content
+
+5. Place in content folder 
