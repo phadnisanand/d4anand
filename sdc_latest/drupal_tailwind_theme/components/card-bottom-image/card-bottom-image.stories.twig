@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Card (Bottom Image) component stories.
+ *
+ * Demonstrates various card component configurations.
+ */
+#}
+
+{% stories card_bottom_image_stories with { title: 'Components/Card Bottom Image' } %}
+
+  {% story default with {
+    name: 'Basic Card',
+    args: {
+      title: 'Card Title',
+      description: 'This is a basic card with title and description.'
+    }
+  } %}
+    {% include '@drupal_tailwind_theme/components/card-bottom-image' with { title, description } only %}
+  {% endstory %}
+
+  {% story with_image with {
+    name: 'Card with Image',
+    args: {
+      title: 'Featured Product',
+      description: 'A card with an image placed at the bottom of the card.',
+      image: '/path/to/image.jpg'
+    }
+  } %}
+    {% include '@drupal_tailwind_theme/components/card-bottom-image' with { title, description, image } only %}
+  {% endstory %}
+
+{% endstories %}

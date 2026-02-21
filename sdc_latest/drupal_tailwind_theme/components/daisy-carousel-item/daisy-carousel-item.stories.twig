@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Daisy Carousel Item component stories.
+ *
+ * Demonstrates various carousel item configurations.
+ */
+#}
+
+{% stories daisy_carousel_item_stories with { title: 'Components/Daisy Carousel Item' } %}
+
+  {% story default with {
+    name: 'Basic Item',
+    args: {}
+  } %}
+    <div class="carousel w-full">
+      {% include '@drupal_tailwind_theme/components/daisy-carousel-item' with {} only %}
+    </div>
+  {% endstory %}
+
+  {% story with_caption with {
+    name: 'With Caption',
+    args: {}
+  } %}
+    <div class="carousel w-full">
+      {% include '@drupal_tailwind_theme/components/daisy-carousel-item' with {} only %}
+    </div>
+  {% endstory %}
+
+{% endstories %}

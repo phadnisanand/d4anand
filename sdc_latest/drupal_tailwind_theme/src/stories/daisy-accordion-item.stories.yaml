@@ -1,0 +1,6 @@
+title: "Components/Daisy Accordion Item"
+parameters:
+  server:
+    url: "http://localhost/www/drupal11/my_site_name_dir/web/storybook/stories/render"
+stories:
+  - name: "Default Item"

@@ -1,0 +1,11 @@
+title: "Components/Accordion"
+parameters:
+  server:
+    url: "http://localhost/www/drupal11/my_site_name_dir/web/storybook/stories/render"
+stories:
+  - name: "Default Accordion"
+  - name: "Open First Item"
+    args:
+      open_first: true
+  - name: "Few Items"
+  - name: "Rich Content"

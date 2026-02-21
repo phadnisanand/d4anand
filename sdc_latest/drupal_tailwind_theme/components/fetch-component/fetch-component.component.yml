@@ -1,0 +1,8 @@
+# my_theme/components/fetch-component/fetch-component.component.yml
+name: Fetch Component
+status: stable
+description: A component that uses the Fetch API to load data.
+libraryOverrides:
+  dependencies:
+    # Use core/once for improved JS behavior
+    - core/once

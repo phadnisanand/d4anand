@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ * Accordion component stories.
+ *
+ * Demonstrates various accordion component configurations.
+ */
+#}
+
+{% stories accordion_stories with { title: 'Components/Accordion' } %}
+
+  {% story default with {
+    name: 'Default Accordion',
+    args: {
+      items: [
+        { title: 'First Item', content: 'This is the content for the first accordion item. You can add any HTML or text here.' },
+        { title: 'Second Item', content: 'This is the content for the second accordion item with more details.' },
+        { title: 'Third Item', content: 'This is the content for the third accordion item.' }
+      ]
+    }
+  } %}
+    {% include '@drupal_tailwind_theme/components/accordion' with { items } only %}
+  {% endstory %}
+
+  {% story open_first with {
+    name: 'Open First Item',
+    args: {
+      items: [
+        { title: 'First Item', content: 'This is the content for the first accordion item. You can add any HTML or text here.' },
+        { title: 'Second Item', content: 'This is the content for the second accordion item with more details.' },
+        { title: 'Third Item', content: 'This is the content for the third accordion item.' }
+      ],
+      open_first: true
+    }
+  } %}
+    {% include '@drupal_tailwind_theme/components/accordion' with { items, open_first } only %}
+  {% endstory %}
+
+  {% story few_items with {
+    name: 'Few Items',
+    args: {
+      items: [
+        { title: 'Frequently Asked', content: 'This is a simple accordion with fewer items.' },
+        { title: 'Question', content: 'Perfect for FAQs or simple toggle sections.' }
+      ]
+    }
+  } %}
+    {% include '@drupal_tailwind_theme/components/accordion' with { items } only %}
+  {% endstory %}
+
+  {% story rich_content with {
+    name: 'Rich Content',
+    args: {
+      items: [
+        { title: 'Expandable Section', content: '<p>This item contains <strong>rich text content</strong> with HTML formatting.</p>' }
+      ],
+      open_first: true
+    }
+  } %}
+    {% include '@drupal_tailwind_theme/components/accordion' with { items, open_first } only %}
+  {% endstory %}
+
+{% endstories %}

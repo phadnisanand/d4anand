@@ -1,0 +1,74 @@
+[10:39:31.352] [INFO] [36mInitializing Storybook[39m
+[10:39:31.856] [DEBUG] Getting package.json info for C:/xampp/htdocs/www/drupal11/my_site_name_dir/web/themes/drupal_tailwind_theme/package.json...
+[10:39:31.858] [DEBUG] Getting CLI versions from NPM for storybook...
+[10:39:31.858] [DEBUG] Executing command: yarn info storybook version --json
+[10:39:33.677] [INFO] Adding Storybook version 10.2.10 to your project
+[10:39:33.681] [DEBUG] Project type detected: react
+[10:39:42.068] [PROMPT] We found a .storybook config directory in your project.
+We assume that Storybook is already instantiated for your project. Do you still want to continue and force the initialization? {"choice":true}
+[10:39:42.068] [DEBUG] Using cached package.json for C:\xampp\htdocs\www\drupal11\my_site_name_dir\web\themes\drupal_tailwind_theme\package.json...
+[10:39:42.072] [INFO] Framework detected: react-webpack5
+[10:39:42.074] [DEBUG] Getting installed version for vitest...
+[10:39:42.074] [DEBUG] Executing command: yarn list --pattern "vitest" --json --recursive vitest
+[10:39:48.478] [DEBUG] Installed version for vitest: 4.0.18
+[10:39:48.478] [DEBUG] Getting installed version for msw...
+[10:39:48.478] [DEBUG] Executing command: yarn list --pattern "msw" --json --recursive msw
+[10:39:55.459] [DEBUG] Installed version for msw: null
+[10:40:00.091] [PROMPT] New to Storybook? {"choice":true}
+[10:40:01.870] [INFO] base-generator-task-start: Generating Storybook configuration
+[10:40:01.871] [DEBUG] Using cached package.json for C:\xampp\htdocs\www\drupal11\my_site_name_dir\web\themes\drupal_tailwind_theme\package.json...
+[10:40:01.872] [DEBUG] Using cached package.json for C:\xampp\htdocs\www\drupal11\my_site_name_dir\web\themes\drupal_tailwind_theme\package.json...
+[10:40:01.873] [DEBUG] Using cached package.json for C:\xampp\htdocs\www\drupal11\my_site_name_dir\web\themes\drupal_tailwind_theme\package.json...
+[10:40:01.875] [INFO] base-generator-task: - Configuring main.ts
+[10:40:01.878] [INFO] base-generator-task: - Configuring preview.ts
+[10:40:01.879] [INFO] base-generator-task: - Adding Storybook command to package.json
+[10:40:01.881] [DEBUG] Getting package.json info for C:/xampp/htdocs/www/drupal11/my_site_name_dir/web/themes/drupal_tailwind_theme/package.json...
+[10:40:01.881] [DEBUG] Using cached package.json for C:\xampp\htdocs\www\drupal11\my_site_name_dir\web\themes\drupal_tailwind_theme\package.json...
+[10:40:01.881] [DEBUG] Using cached package.json for C:\xampp\htdocs\www\drupal11\my_site_name_dir\web\themes\drupal_tailwind_theme\package.json...
+[10:40:01.882] [INFO] base-generator-task: - Copying framework templates
+[10:40:01.936] [DEBUG] Executing command: yarn config get registry
+[10:40:03.465] [INFO] base-generator-task-success: Storybook configuration generated
+[10:40:03.468] [INFO] adding-dependencies-task-start: Adding dependencies to package.json
+[10:40:03.468] [INFO] adding-dependencies-task-success: Dependencies added to package.json
+[10:40:03.472] [INFO] configure-addons-task-start: Configuring addons...
+[10:40:03.473] [INFO] configure-addons-task: Configuring @storybook/addon-a11y...
+[10:40:03.474] [DEBUG] Getting package.json info for C:/xampp/htdocs/www/drupal11/my_site_name_dir/web/themes/drupal_tailwind_theme/package.json...
+[10:40:03.474] [DEBUG] Executing command: yarn exec storybook@10.2.10 -- automigrate addon-a11y-addon-test --loglevel silent --skip-doctor --package-manager yarn1 --config-dir .storybook
+[10:40:04.194] [DEBUG] {
+  "shortMessage": "Command failed with exit code 1: yarn.cmd exec \"storybook@10.2.10\" -- automigrate addon-a11y-addon-test --loglevel silent --skip-doctor --package-manager yarn1 --config-dir .storybook",
+  "command": "yarn.cmd exec storybook@10.2.10 -- automigrate addon-a11y-addon-test --loglevel silent --skip-doctor --package-manager yarn1 --config-dir .storybook",
+  "escapedCommand": "yarn.cmd exec \"storybook@10.2.10\" -- automigrate addon-a11y-addon-test --loglevel silent --skip-doctor --package-manager yarn1 --config-dir .storybook",
+  "cwd": "C:\\xampp\\htdocs\\www\\drupal11\\my_site_name_dir\\web\\themes\\drupal_tailwind_theme",
+  "durationMs": 719.4495,
+  "failed": true,
+  "timedOut": false,
+  "isCanceled": false,
+  "isGracefullyCanceled": false,
+  "isTerminated": false,
+  "isMaxBuffer": false,
+  "isForcefullyTerminated": false,
+  "exitCode": 1,
+  "stdout": "yarn exec v1.22.22\ninfo Visit https://yarnpkg.com/en/docs/cli/exec for documentation about this command.",
+  "stderr": "error Couldn't find the binary storybook@10.2.10",
+  "stdio": [
+    null,
+    "yarn exec v1.22.22\ninfo Visit https://yarnpkg.com/en/docs/cli/exec for documentation about this command.",
+    "error Couldn't find the binary storybook@10.2.10"
+  ],
+  "ipcOutput": [],
+  "pipedFrom": []
+}
+[10:40:04.195] [INFO] configure-addons-task: Configuring @storybook/addon-docs...
+[10:40:04.199] [INFO] configure-addons-task: @storybook/addon-docs configured
+
+[10:40:04.199] [INFO] configure-addons-task: Configuring @storybook/addon-onboarding...
+[10:40:04.201] [INFO] configure-addons-task: @storybook/addon-onboarding configured
+
+[10:40:04.202] [ERROR] configure-addons-task-error: Failed to configure addons
+[10:40:04.203] [INFO] [2m❌ @storybook/addon-a11y[22m
+[10:40:04.204] [INFO] [2m✅ @storybook/addon-docs[22m
+[10:40:04.204] [INFO] [2m✅ @storybook/addon-onboarding[22m
+[10:40:04.205] [WARN] Storybook setup completed, but some non-blocking errors occurred. Please check the log file below for details.
+[10:40:04.206] [INFO] To run Storybook manually, run [36myarn storybook[39m. CTRL+C to stop.
+[10:40:04.208] [INFO] Wanna know more about Storybook? Check out [36mhttps://storybook.js.org/[39m
+Having trouble or want to chat? Join us at [36mhttps://discord.gg/storybook/[39m

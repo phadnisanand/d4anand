@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Daisy Carousel component stories.
+ *
+ * Demonstrates various carousel configurations using slots.
+ */
+#}
+
+{% stories daisy_carousel_stories with { title: 'Components/Daisy Carousel' } %}
+
+  {% story default with {
+    name: 'Basic Carousel',
+    args: {}
+  } %}
+    {% include '@drupal_tailwind_theme/components/daisy-carousel' with {} only %}
+  {% endstory %}
+
+{% endstories %}
