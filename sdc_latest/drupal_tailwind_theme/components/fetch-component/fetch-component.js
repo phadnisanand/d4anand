@@ -13,10 +13,10 @@
           .then(data => {		  
 			  let ele = '<ul>';
 			  data.forEach(user => {
-				  ele+= '<li>'+ '<h2>' + user.info +'</h2>' + '<p>' + user.body + '</p></li>'
-				})
-				ele+='</ul>';
-				dataPlaceholder.innerHTML = ele;
+				  ele += '<li>'+ '<h2>' + user.info +'</h2>' + '<p>' + user.body + '</p></li>'
+			  })
+			  ele+='</ul>';
+			  dataPlaceholder.innerHTML = ele;
           })
           .catch(error => {
             console.error('Error fetching data:', error);

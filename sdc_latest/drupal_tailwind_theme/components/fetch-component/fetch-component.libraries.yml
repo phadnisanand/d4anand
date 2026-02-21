@@ -1,0 +1,6 @@
+accordion:
+  js:
+    fetch-component.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
