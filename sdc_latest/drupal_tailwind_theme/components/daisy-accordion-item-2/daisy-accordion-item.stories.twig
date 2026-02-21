@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Daisy Accordion Item component stories.
+ *
+ * Demonstrates various accordion item configurations using slots.
+ */
+#}
+
+{% stories daisy_accordion_item_stories with { title: 'Components/Daisy Accordion Item' } %}
+
+  {% story default with {
+    name: 'Basic Item',
+    args: {}
+  } %}
+    <div class="join join-vertical w-full">
+      {% include '@drupal_tailwind_theme/components/daisy-accordion-item' with {} only %}
+    </div>
+  {% endstory %}
+
+  {% story rich_content with {
+    name: 'Rich Content',
+    args: {}
+  } %}
+    <div class="join join-vertical w-full">
+      {% include '@drupal_tailwind_theme/components/daisy-accordion-item' with {} only %}
+    </div>
+  {% endstory %}
+
+{% endstories %}

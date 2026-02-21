@@ -78,4 +78,10 @@
      {{ content.body }}
     {% endblock %}
   {% endembed %}
+  
+  
+    {% include '@drupal_tailwind_theme/components/daisy-accordion-item/daisy-accordion-item.twig' with {
+		title: node.label,
+		content: content.body
+    } %}
 </article>

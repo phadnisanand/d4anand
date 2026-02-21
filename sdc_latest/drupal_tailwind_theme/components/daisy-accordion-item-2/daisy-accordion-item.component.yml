@@ -1,0 +1,9 @@
+name: Daisy Accordion Item
+status: stable
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    content:
+      type: string
