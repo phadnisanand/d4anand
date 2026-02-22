@@ -1,0 +1,14 @@
+name: Toggler
+
+props:
+  type: object
+  required:
+    - linkText
+  properties:
+    linkText:
+      type: string
+      title: Toggle label
+
+slots:
+  content:
+    title: Toggle content

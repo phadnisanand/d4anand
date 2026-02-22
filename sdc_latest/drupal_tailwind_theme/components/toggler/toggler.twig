@@ -1,0 +1,23 @@
+{{ attach_library('drupal_tailwind_theme/alpine') }}
+<div 
+  x-data="{ open: false }"
+  class="w-full"
+>
+  <button
+    @click="open = !open"
+    class="btn btn-primary"
+    aria-expanded="false"
+    :aria-expanded="open.toString()"
+  >
+    {{ linkText }}
+  </button>
+
+  <div
+    x-show="open"
+    x-transition
+    x-cloak
+    class="mt-4 p-4 bg-base-200 rounded"
+  >
+    {% block content %}{% endblock %}
+  </div>
+</div>

@@ -84,4 +84,12 @@
 		title: node.label,
 		content: content.body
     } %}
+	
+	 {% embed '@drupal_tailwind_theme/components/toggler/toggler.twig' with {
+	  linkText: 'Show details'
+	} %}
+	  {% block content %}
+		{{ content.body }}
+	  {% endblock %}
+{% endembed %}
 </article>

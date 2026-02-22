@@ -116,3 +116,12 @@ tailwind:
   css:
     component:
       dist/index.css: {}
+alpine:
+  remote: https://alpinejs.dev
+  version: 3.13.3
+  license:
+    name: MIT
+    url: https://github.com/alpinejs/alpine/blob/main/LICENSE.md
+    gpl-compatible: true
+  js:
+    https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js: { type: external, minified: true }
