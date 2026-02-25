@@ -1,0 +1,5 @@
+name: 'Oophooks'
+type: module
+description: 'This module is hooks oop'
+package: Custom
+core_version_requirement: ^10 || ^11

@@ -1,0 +1,4 @@
+services:
+  Drupal\oophooks\Hook\CustomModuleFormHooks:
+    class: Drupal\oophooks\Hook\CustomModuleFormHooks
+    autowire: true
