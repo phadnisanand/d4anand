@@ -1,0 +1,25 @@
+htmx.settings_form:
+  path: '/admin/config/system/htmx'
+  defaults:
+    _title: 'HTMX settings'
+    _form: 'Drupal\htmx\Form\SettingsForm'
+  requirements:
+    _permission: 'administer htmx configuration'
+
+htmx.example:
+  path: '/htmx/example/api'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\htmx\Controller\ExampleEditController::build'
+  # Allow GET, PUT, POST, PATCH, DELETE
+  methods: [GET, PUT, POST, PATCH, DELETE]
+  requirements:
+    _permission: 'access content'
+
+htmx.example_sse:
+  path: '/htmx/sse-example'
+  defaults:
+    _title: 'SSE'
+    _controller: '\Drupal\htmx\Controller\ExampleSseController::build'
+  requirements:
+    _permission: 'access content'

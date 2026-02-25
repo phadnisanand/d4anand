@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for HTMX module.
+ */
+
+ /**
+  * Implements hook_theme().
+  */
+function htmx_theme() {
+    return [
+        'htmx_example_edit' => [
+          'template' => 'htmx-example-edit',
+            'variables' => [
+                'node' => NULL,
+                'user_email' => NULL,
+            ],
+        ],
+        'htmx_example_edit_form' => [
+            'template' => 'htmx-example-edit-form',
+            'variables' => [
+                'form' => NULL,
+                'user_email' => NULL,
+            ],
+        ],
+        'htmx_sse_example' => [
+            'template' => 'htmx-sse-example',
+            'variables' => [
+                'user_email' => NULL,
+            ],
+        ],
+    ];
+}

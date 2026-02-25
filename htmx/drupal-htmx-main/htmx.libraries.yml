@@ -1,0 +1,5 @@
+# A library for attaching htmx.
+htmx:
+  js:
+    https://unpkg.com/htmx.org@1.9.8/dist/htmx.min.js: {type: external, minified: true}
+    https://unpkg.com/htmx.org/dist/ext/sse.js: {type: external, minified: true}
