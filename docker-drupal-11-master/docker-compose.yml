@@ -1,0 +1,41 @@
+services:
+  php:
+    build:
+      context: .
+      dockerfile: ./php/Dockerfile
+    container_name: php-container
+    volumes:
+      - ./drupal:/var/www/html
+    environment:
+      - PHP_IDE_CONFIG=serverName=php-container
+    networks:
+      - ydrupal
+
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: example
+    restart: always
+    volumes:
+      - ./pgdata:/var/lib/mysql
+    networks:
+      - ydrupal
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-container
+    volumes:
+      - ./nginx.config:/etc/nginx/nginx.conf
+      - ./drupal:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - php
+    networks:
+      - ydrupal
+
+volumes:
+  pgdata:
+
+networks:
+  ydrupal:
