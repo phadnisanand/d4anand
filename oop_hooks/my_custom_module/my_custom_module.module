@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for My Custom Module module.
+ */
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\my_custom_module\Hook\MyCustomModuleHooks1;
+use Drupal\Core\Hook\Attribute\LegacyHook;
+use Drupal\my_custom_module\Hook\MyCustomModuleHooks;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+#[LegacyHook]
+function my_custom_module_help($route_name, RouteMatchInterface $route_match) {
+  return \Drupal::service(MyCustomModuleHooks::class)->help($route_name, $route_match);
+}
+
+
+/**
+ * Implements hook_entity_presave().
+ */
+#[LegacyHook]
+function  my_custom_module_entity_presave(EntityInterface $entity) {
+	\Drupal::service(MyCustomModuleHooks1::class)->entityPresave($entity);
+}

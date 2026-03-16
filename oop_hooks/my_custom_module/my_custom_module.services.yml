@@ -1,0 +1,9 @@
+
+services:
+  Drupal\my_custom_module\Hook\MyCustomModuleHooks:
+    class: Drupal\my_custom_module\Hook\MyCustomModuleHooks
+    autowire: true
+
+  Drupal\my_custom_module\Hook\MyCustomModuleHooks1:
+    class: Drupal\my_custom_module\Hook\MyCustomModuleHooks1
+    autowire: true
