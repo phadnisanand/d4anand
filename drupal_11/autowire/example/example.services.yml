@@ -1,0 +1,4 @@
+services:
+  example.fancy_service:
+    class: Drupal\example\FancyService
+    autowire: true
